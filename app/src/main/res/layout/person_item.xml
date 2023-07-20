@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/bottom_border"
+    >
+
+    <TextView
+        android:id="@+id/firstnameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Test"
+
+        android:textColor="@color/black"
+
+        android:padding="5dp"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        android:text="Test"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="33dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="5dp"
+        android:gravity="center">
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="32dp"
+            android:layout_height="31dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_margin="0dp"
+            android:background="@drawable/star"
+            android:buttonTint="#FFA41B"
+            android:checked="false"
+            android:padding="0dp"
+            android:textOff=""
+            android:textOn="" />
+    </LinearLayout>
+
+
+</LinearLayout>

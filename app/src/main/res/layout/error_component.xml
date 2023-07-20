@@ -1,0 +1,132 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:background="#80000000"
+    android:id="@+id/errorLayout"
+    android:padding="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+
+
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:padding="0dp"
+        android:paddingStart="60dp"
+        android:paddingTop="0dp"
+        android:paddingEnd="60dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/linearLayout"
+            android:layout_width="295dp"
+            android:layout_height="391dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#7D7463"
+            android:orientation="vertical"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#454a50">
+
+
+                <TextView
+                    android:id="@+id/errorTitle"
+                    android:layout_width="199dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="182dp"
+                    android:layout_marginEnd="31dp"
+                    android:layout_marginBottom="138dp"
+                    android:fontFamily="@font/ubuntu_medium_italic"
+
+                    android:gravity="center"
+                    android:text="Phantom malfunction"
+                    android:textAllCaps="false"
+
+                    android:textColor="#ffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/errorMessage"
+                    android:layout_width="149dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="top"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="248dp"
+                    android:layout_marginEnd="11dp"
+                    android:layout_marginBottom="71dp"
+
+                    android:gravity="center|top"
+
+                    android:text="It seems like we have an error"
+
+                    android:textColor="#fff"
+                    android:textSize="13sp">
+
+                </TextView>
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="93dp"
+                    android:layout_height="117dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="83dp"
+                    android:layout_marginTop="56dp"
+                    android:layout_marginEnd="83dp"
+                    android:layout_marginBottom="195dp"
+                    android:src="@drawable/ghost" />
+
+                <Button
+                    android:id="@+id/close_button"
+                    android:layout_width="144dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="57dp"
+                    android:layout_marginEnd="58dp"
+                    android:layout_marginBottom="43dp"
+                    android:background="@drawable/round"
+
+                    android:backgroundTint="#301B1B"
+                    android:text="Close"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:typeface="normal" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
